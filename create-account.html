@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create A New Account</title>
+    <link rel="stylesheet" href="create-account.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title center">Create a New Account</h1>
+        <p class="description center">Please fill in the form below to create a new account.</p>
+        <form action="welcome-card.html">
+            <fieldset>
+                <legend>Account Information</legend>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <label for="phone">Phone: </label>
+                <input type="number" name="phone" id="phone" placeholder="+2334678929" required>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" placeholder="Enter a password" required>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name">First Name: </label>
+                <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required>
+                <label for="last-name">Last Name: </label>
+                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" name="dob" id="dob" required>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email" class="contact-info">Email: </label>
+                <input type="radio" name="contact-info" id="email" value="email" class="contact-info-radio-btn" checked>
+                <label for="phone" class="contact-info">Phone: </label>
+                <input type="radio" name="contact-info" id="phone" value="phone" class="contact-info-radio-btn">
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="bio">Write something about yourself: </label>
+                <textarea name="bio" id="bio" placeholder="Tell us a bit about yourself" rows="4" cols="50"></textarea>
+            </fieldset>
+            <a href="welcome-card.html"><button type="submit" class="submit-btn">Sign Up</button></a>
+        </form>
+    </main>
+</body>
+</html>
